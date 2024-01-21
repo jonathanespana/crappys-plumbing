@@ -13,6 +13,8 @@ import {
 } from 'react-router-dom'
 import './index.css'
 import Root from "./routes/root"
+import Home from './pages/Home';
+import Tour from './pages/Tour';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +22,11 @@ const router = createBrowserRouter(
       path="/"
       element={<Root />}
     >
+      <Route index element={<Home />} />
+      <Route
+        path='/:id'
+        element={<Tour />}
+      />
     </Route>
   )
 )
