@@ -1,12 +1,12 @@
 
-import SearchAppBar from '../components/AppBar';
+import LogoAppBar from '../components/LogoAppBar';
 import { Outlet } from 'react-router-dom';
 
 export default function Root() {
 
     return (
         <div >
-            <SearchAppBar />
+            <LogoAppBar />
             <Outlet />
         </div>
     );
