@@ -33,7 +33,7 @@ export default function LogoAppBar() {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar sx={{ backgroundColor: "#011126" }} position="static">
                     <Toolbar sx={{ marginX: 5 }}>
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        <Typography variant="h3" paddingLeft={1} sx={{ flexGrow: 1, fontFamily: 'Nanum Pen Script' }}>
                             Crappy's Plumbing
                         </Typography>
                         <Typography>
@@ -43,8 +43,7 @@ export default function LogoAppBar() {
                 </AppBar>
             </Box>
             <AppBar sx={{ backgroundColor: "#011126" }} position="static">
-                <Container maxWidth="xl">
-                    <Toolbar disableGutters>
+                    <Toolbar sx={{ marginX: 5 }}>
                         
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
@@ -99,7 +98,6 @@ export default function LogoAppBar() {
                             <Button color='warning' variant="contained">Make An Appointment</Button>
                         </Box>
                     </Toolbar>
-                </Container>
             </AppBar>
         </div>
     );
