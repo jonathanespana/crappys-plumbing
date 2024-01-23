@@ -1,6 +1,7 @@
 import ServicesGrid from '../components/ServicesGrid';
 import HomeSplash from '../components/HomeSplash';
 import HomeMainContent from '../components/HomeMainContent';
+import ServicesHighlight from '../components/ServicesHighlight';
 
 export default function Home() {
     return (
@@ -8,6 +9,7 @@ export default function Home() {
             <HomeSplash />
             <ServicesGrid />
             <HomeMainContent />
+            <ServicesHighlight />
         </div>
     )
 }
