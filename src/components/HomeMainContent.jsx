@@ -7,12 +7,12 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 export default function HomeMainContent() {
     return (
-        <Container>
+        <Container sx={{marginBottom: 5}}>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={2}>
                     <Grid item lg={6} sx={{ display:{xs: 'none', lg: 'block'} }}>
-                        <Paper elevation={0}>
-                            <Box sx={{ width: '100%' }} cols={1} rowHeight={350} paddingRight={3}>
+                        <Paper elevation={0} sx={{ borderRadius: "40px 0px 40px 0px", overflow: 'hidden', marginRight: 3 }}>
+                            <Box sx={{ width: '100%' }} cols={1} rowHeight={350}>
                                 <ImageListItem>
                                     <img
                                         src="https://i.ibb.co/5h50J9J/Adobe-Stock-381367169.jpg"
