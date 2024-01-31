@@ -13,8 +13,9 @@ import {
 } from 'react-router-dom'
 import './index.css'
 import Root from "./routes/root"
-import Home from './pages/Home';
-import Tour from './pages/Tour';
+import Index from './routes/Index';
+import AboutUs from './routes/AboutUs';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,11 +23,9 @@ const router = createBrowserRouter(
       path="/"
       element={<Root />}
     >
-      <Route index element={<Home />} />
-      <Route
-        path='/:id'
-        element={<Tour />}
-      />
+      <Route index element={<Index />} />
+      <Route path="about" element={<AboutUs />} />
+      
     </Route>
   )
 )

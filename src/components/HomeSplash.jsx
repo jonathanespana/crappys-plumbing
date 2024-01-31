@@ -11,14 +11,7 @@ export default function HomeSplash() {
                 overflow: "hidden",
                 height: 625,
             }}>
-                <img style={{ position: "absolute", zIndex: -5 }}className="splash-background" width="100%" src="https://i.ibb.co/gdFjHBm/Adobe-Stock-482845105.jpg" alt="Adobe-Stock-482845105" border="0"/>
-                <Box width='100%' height="100%" sx={{
-                    backgroundColor: "#08668c",
-                    opacity: 0.6,
-                    position: "absolute",
-                    zIndex: 0
-                }}>
-                </Box>
+                <img style={{ position: "absolute", zIndex: -5 }}className="splash-background" width="100%" src="https://i.ibb.co/D7zJVyQ/Adobe-Stock-482845105.png" alt="Adobe-Stock-482845105" border="0"/>
                 <Box width='100%' height="100%" sx={{
                     position: "absolute",
                     zIndex: 5,

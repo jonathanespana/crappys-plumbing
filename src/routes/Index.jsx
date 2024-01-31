@@ -3,6 +3,10 @@ import HomeSplash from '../components/HomeSplash';
 import HomeMainContent from '../components/HomeMainContent';
 import ServicesHighlight from '../components/ServicesHighlight';
 import HomeContact from '../components/HomeContact';
+import HomeSplashGrid from '../components/HomeSplashGrid';
+import HomeReviews from '../components/HomeReviews';
+import HomeScheduler from '../components/HomeScheduler';
+import HomeFooter from '../components/HomeFooter';
 
 export default function Home() {
     return (
@@ -12,6 +16,10 @@ export default function Home() {
             <HomeMainContent />
             <ServicesHighlight />
             <HomeContact />
+            <HomeSplashGrid />
+            <HomeReviews />
+            <HomeScheduler />
+            <HomeFooter />
         </div>
     )
 }

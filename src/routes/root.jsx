@@ -7,7 +7,10 @@ export default function Root() {
     return (
         <div >
             <LogoAppBar />
-            <Outlet />
+            <div>
+                <Outlet />
+
+            </div>
         </div>
     );
 }
