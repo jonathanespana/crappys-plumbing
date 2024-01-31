@@ -6,6 +6,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import { createTheme, ThemeProvider } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const theme = createTheme({
     palette: {
@@ -18,7 +19,7 @@ const theme = createTheme({
 
 export default function ServicesGrid() {
     return (
-        <Container >
+        <Container className="ServicesGrid">
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={3}>
                     <Grid xs={12} sm={6} lg={3} sx={{ position: 'relative'}}>
@@ -52,7 +53,7 @@ export default function ServicesGrid() {
                                         }
                                     }}
                                 >
-                                    <Typography variant='subtitle1' component="p">Learn More</Typography>
+                                    <Link to="about">Learn More</Link>
                                 </Box>
                             </ThemeProvider>
                         </Paper>

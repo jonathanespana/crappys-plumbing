@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -21,9 +22,18 @@ export default function HomeFooter() {
                     <Grid xs={12}  md={3}>
                         <ul style={{listStyle: "none"}}>
                             <li>
-                            <Typography>
+                            <NavLink 
+                            to="about"
+                            className={({ isActive, isPending}) =>
+                                isActive
+                                ? "active"
+                                : isPending
+                                ? "pending"
+                                : ""
+                            }
+                            >
                                 About Us
-                            </Typography>
+                            </NavLink>
                             </li>
                             <li>
                             <Typography>

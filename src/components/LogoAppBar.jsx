@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { NavLink } from 'react-router-dom';
 
 const pages = ['Home', 'About Us', 'Plumbing Services', 'Reviews', 'Contact Us'];
 
@@ -74,24 +75,54 @@ export default function LogoAppBar() {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                                {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography textAlign="center">{page}</Typography>
-                                    </MenuItem>
-                                ))}
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink 
+                                    to="/"
+                                    className={({ isActive, isPending }) =>
+                                        isActive
+                                        ? "active"
+                                        : isPending
+                                        ? "pending"
+                                        : ""
+                                    }
+                                    >
+                                        Home
+                                    </NavLink>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink 
+                                    to="about"
+                                    className={({ isActive, isPending }) =>
+                                        isActive
+                                        ? "active"
+                                        : isPending
+                                        ? "pending"
+                                        : ""
+                                    }
+                                    >
+                                        About Us
+                                    </NavLink>
+                                </MenuItem>
                             </Menu>
                         </Box>
                         
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            {pages.map((page) => (
-                                <Button
-                                    key={page}
-                                    onClick={handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    {page}
-                                </Button>
-                            ))}
+                            <NavLink 
+                            to="/"
+                            className={({ isActive, isPending }) => 
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink 
+                            to="about/"
+                            className={({ isActive, isPending }) => 
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                            >
+                                About Us
+                            </NavLink>
                         </Box>
 
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
