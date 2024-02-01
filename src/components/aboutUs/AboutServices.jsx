@@ -9,19 +9,19 @@ const servicesList = [
 
 export default function AboutServices() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 }} marginTop={8}>
             <Grid container spacing={2}>
                 <Grid item xs={12} lg={6} bgcolor='#142740' color="#F6FFFF">
                     <Box sx={{padding: 8}}>
                         <img src="https://i.ibb.co/9w6hJ9s/leakypipe-icon.png" alt="leakypipe-icon" border="0" width={125}/>
-                        <Typography variant='h3' component='h3' textTransform="uppercase">
-                            Our Services
+                        <Typography variant='h4' component='h4' textTransform="uppercase">
+                            Learn About Our Services
                         </Typography>
                         <Typography variant='h5' component='h6' marginTop={2}>
-                            How We Can Help You
+                            How We Can Help You?
                         </Typography>
                         <Typography variant='body1' component='p' marginTop={2}>
-                            When you trust Crappy's Plumbing, you know the job will done right the first!
+                            At Krappy's Plumbing, we stand out by not only offering comprehensive plumbing services for your home or business but also by employing cutting-edge technology and top-of-the-line equipment. Whether it's routine maintenance or addressing emergency situations, our skilled technicians utilize state-of-the-art tools to ensure precision and efficiency in every job.  
                         </Typography>
                         <Grid container spacing={2} marginTop={0.5}>
                             {servicesList.map((servicesItem) => (
@@ -33,15 +33,18 @@ export default function AboutServices() {
                                 
                             ))}
                         </Grid>
-                        <Button variant='contained' color='warning' size='large' sx={{marginTop: 5}}>View all services</Button>
+                        <Button variant='contained' color='warning' size='large' sx={{marginTop: 5}}>Learn More</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={12} lg={6} style={{paddingLeft: 0, paddingTop: 0}}>
                     <Box style={{
-                        height: 700,
+                        height: '100%',
                         overflow: 'hidden',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
                     }}>
-                        <img src="https://i.ibb.co/0VVQgGT/Adobe-Stock-103713408.jpg" alt="Adobe-Stock-103713408" border="0" style={{ height: 700, width: "100%", objectFit: 'cover', objectPosition: 'center'}}/>
+                        <img src="https://i.ibb.co/0VVQgGT/Adobe-Stock-103713408.jpg" alt="Adobe-Stock-103713408" border="0" style={{ height: 700, width: "100%"}}/>
                     </Box>
                 </Grid>
             </Grid>

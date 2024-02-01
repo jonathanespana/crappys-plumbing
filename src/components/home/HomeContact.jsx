@@ -24,7 +24,7 @@ export default function HomeContact() {
     };
 
     return (
-        <Container sx={{ marginBottom: 5 }}>
+        <Container className='HomeContact' sx={{ marginBottom: 5 }}>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={2}>
                     <Grid item lg={6} sx={{ display: { xs: 'none', lg: 'block' } }}>
