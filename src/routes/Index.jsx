@@ -1,12 +1,11 @@
-import ServicesGrid from '../components/ServicesGrid';
-import HomeSplash from '../components/HomeSplash';
-import HomeMainContent from '../components/HomeMainContent';
-import ServicesHighlight from '../components/ServicesHighlight';
-import HomeContact from '../components/HomeContact';
-import HomeSplashGrid from '../components/HomeSplashGrid';
-import HomeReviews from '../components/HomeReviews';
-import HomeScheduler from '../components/HomeScheduler';
-import HomeFooter from '../components/HomeFooter';
+import ServicesGrid from '../components/home/ServicesGrid';
+import HomeSplash from '../components/home/HomeSplash';
+import HomeMainContent from '../components/home/HomeMainContent';
+import ServicesHighlight from '../components/home/ServicesHighlight';
+import HomeContact from '../components/home/HomeContact';
+import HomeSplashGrid from '../components/home/HomeSplashGrid';
+import HomeReviews from '../components/home/HomeReviews';
+import HomeScheduler from '../components/home/HomeScheduler';
 
 export default function Home() {
     return (
@@ -19,7 +18,6 @@ export default function Home() {
             <HomeSplashGrid />
             <HomeReviews />
             <HomeScheduler />
-            <HomeFooter />
         </div>
     )
 }

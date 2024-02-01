@@ -5,10 +5,10 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
-export default function HomeFooter() {
+export default function Footer() {
 
     return (
-        <div className="HomeFooter">
+        <div className="Footer">
             <Box sx={{ flexGrow: 1, bgcolor: "#142740", padding: 6, color: "#f7f7f7"}} >
                 <Grid container spacing={2}>
                     <Grid xs={12} md={6}>
@@ -21,6 +21,20 @@ export default function HomeFooter() {
                     </Grid>
                     <Grid xs={12}  md={3}>
                         <ul style={{listStyle: "none"}}>
+                            <li>
+                            <NavLink 
+                            to="/"
+                            className={({ isActive, isPending}) =>
+                                isActive
+                                ? "active"
+                                : isPending
+                                ? "pending"
+                                : ""
+                            }
+                            >
+                                Home
+                            </NavLink>
+                            </li>
                             <li>
                             <NavLink 
                             to="about"

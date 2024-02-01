@@ -1,5 +1,6 @@
 
-import LogoAppBar from '../components/LogoAppBar';
+import LogoAppBar from '../components/root/LogoAppBar';
+import Footer from '../components/root/Footer';
 import { Outlet } from 'react-router-dom';
 
 export default function Root() {
@@ -9,8 +10,8 @@ export default function Root() {
             <LogoAppBar />
             <div>
                 <Outlet />
-
             </div>
+            <Footer />
         </div>
     );
 }
