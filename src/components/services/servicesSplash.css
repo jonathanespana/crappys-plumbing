@@ -1,0 +1,8 @@
+.ServicesSplash {
+    background: url("https://i.ibb.co/n6M009w/servicesaboutussplash.png") center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 450px;
+}

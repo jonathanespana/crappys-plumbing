@@ -91,7 +91,7 @@ export default function LogoAppBar() {
                                 </MenuItem>
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <NavLink 
-                                    to="about"
+                                    to="about/"
                                     className={({ isActive, isPending }) =>
                                         isActive
                                         ? "active"
@@ -101,6 +101,34 @@ export default function LogoAppBar() {
                                     }
                                     >
                                         About Us
+                                    </NavLink>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink 
+                                    to="services/"
+                                    className={({ isActive, isPending }) =>
+                                        isActive
+                                        ? "active"
+                                        : isPending
+                                        ? "pending"
+                                        : ""
+                                    }
+                                    >
+                                        Services
+                                    </NavLink>
+                                </MenuItem>
+                                <MenuItem onClick={handleCloseNavMenu}>
+                                    <NavLink 
+                                    to="pricing/"
+                                    className={({ isActive, isPending }) =>
+                                        isActive
+                                        ? "active"
+                                        : isPending
+                                        ? "pending"
+                                        : ""
+                                    }
+                                    >
+                                        Pricing
                                     </NavLink>
                                 </MenuItem>
                             </Menu>
@@ -122,6 +150,22 @@ export default function LogoAppBar() {
                             }
                             >
                                 About Us
+                            </NavLink>
+                            <NavLink 
+                            to="services/"
+                            className={({ isActive, isPending }) => 
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                            >
+                                Services
+                            </NavLink>
+                            <NavLink 
+                            to="pricing/"
+                            className={({ isActive, isPending }) => 
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                            >
+                                Pricing
                             </NavLink>
                         </Box>
 

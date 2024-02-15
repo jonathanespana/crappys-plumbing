@@ -15,6 +15,8 @@ import './index.css'
 import Root from "./routes/root"
 import Index from './routes/Index';
 import AboutUs from './routes/AboutUs';
+import Services from './routes/Services';
+import Pricing from './routes/Pricing';
 
 
 const router = createBrowserRouter(
@@ -25,6 +27,8 @@ const router = createBrowserRouter(
     >
       <Route index element={<Index />} />
       <Route path="about" element={<AboutUs />} />
+      <Route path="services" element={<Services />} />
+      <Route path="pricing" element={<Pricing />} />
       
     </Route>
   )

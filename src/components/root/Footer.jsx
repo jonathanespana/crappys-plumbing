@@ -37,7 +37,7 @@ export default function Footer() {
                             </li>
                             <li>
                             <NavLink 
-                            to="about"
+                            to="about/"
                             className={({ isActive, isPending}) =>
                                 isActive
                                 ? "active"
@@ -50,10 +50,34 @@ export default function Footer() {
                             </NavLink>
                             </li>
                             <li>
-                            <Typography>
-                                Plumbing Services 
-                            </Typography>
+                            <NavLink 
+                            to="services/"
+                            className={({ isActive, isPending}) =>
+                                isActive
+                                ? "active"
+                                : isPending
+                                ? "pending"
+                                : ""
+                            }
+                            >
+                                Services
+                            </NavLink>
                             </li>
+                            <li>
+                            <NavLink 
+                            to="pricing/"
+                            className={({ isActive, isPending}) =>
+                                isActive
+                                ? "active"
+                                : isPending
+                                ? "pending"
+                                : ""
+                            }
+                            >
+                                Pricing
+                            </NavLink>
+                            </li>
+                            
                             <li>
                             <Typography>
                                 Reviews 
